@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "401141602907",
+    "project_id": "inventory-now"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401141602907:android:6762e8b4cf3344f5",
+        "android_client_info": {
+          "package_name": "in.thepolymath.inventorynow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401141602907-d5860ggqh3pe2gpk4o9a949se3nquio5.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "401141602907-598bpae9st421tdnl36adns021ntc570.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.thepolymath.inventorynow",
+            "certificate_hash": "ca0d50009599524fe5040dce030996d7e4dd8183"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKvGMWOnzKWbs3GMOHl1BIQwB4P8zsks4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
