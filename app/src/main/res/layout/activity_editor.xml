@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_overview" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_name"
+                style="@style/EditorFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_desc"
+                style="@style/EditorFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/hint_desc"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="3" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/hint_category" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+
+            <Spinner
+                android:id="@+id/edit_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_quantity" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp">
+
+            <Button
+                android:id="@+id/minusButton"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:minWidth="16dp"
+                android:onClick="decreaseQuantity"
+                android:text="@string/minus"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/edit_quantity"
+                style="@style/EditorFieldStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/plusButton"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:minWidth="16dp"
+                android:onClick="increaseQuantity"
+                android:text="@string/plus"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_cost" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp">
+
+            <Button
+                android:id="@+id/minusCost"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:minWidth="16dp"
+                android:onClick="decreaseCost"
+                android:text="@string/minus"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/edit_cost"
+                style="@style/EditorFieldStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/plusCost"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:minWidth="16dp"
+                android:onClick="increaseCost"
+                android:text="@string/plus"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_price" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp">
+
+            <Button
+                android:id="@+id/minusPrice"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:minWidth="16dp"
+                android:onClick="decreasePrice"
+                android:text="@string/minus"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/edit_price"
+                style="@style/EditorFieldStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/plusPrice"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:minWidth="16dp"
+                android:onClick="increasePrice"
+                android:text="@string/plus"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_image" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:onClick="addImage"
+                android:text="Add A Photo"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/add_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

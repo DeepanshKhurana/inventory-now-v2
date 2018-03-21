@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/placeholder_name"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/placeholder_desc"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/you_have"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="5"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/placeholder_price"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/placeholder_category"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/notification_low"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.2"
+        android:src="@drawable/bg_circle"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/saleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:text="@string/sale_button"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/orderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:onClick="composeEmail"
+            android:text="@string/order_button"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
