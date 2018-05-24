@@ -1,2 +1,2 @@
-# UdacityProject_InventoryNow
-This is the last project for my Udacity Nanodegree called Inventory Now. It uses SQLite Databases to store information for an inventory. 
+# Inventory Now
+Inventory Now is an app that started from my Udacity Nanodegree. I built it further for the final project of my Bachelors' Degree.
