@@ -1,7 +1,9 @@
 {
   "project_info": {
     "project_number": "401141602907",
-    "project_id": "inventory-now"
+    "firebase_url": "https://inventory-now.firebaseio.com",
+    "project_id": "inventory-now",
+    "storage_bucket": "inventory-now.appspot.com"
   },
   "client": [
     {
@@ -12,6 +14,10 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "401141602907-ruq4puebma6u5rvimks66sr32t51mggo.apps.googleusercontent.com",
+          "client_type": 3
+        },
         {
           "client_id": "401141602907-d5860ggqh3pe2gpk4o9a949se3nquio5.apps.googleusercontent.com",
           "client_type": 3
@@ -35,11 +41,16 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401141602907-ruq4puebma6u5rvimks66sr32t51mggo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }

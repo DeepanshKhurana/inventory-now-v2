@@ -8,4 +8,12 @@
         android:id="@+id/action_delete_all_entries"
         android:title="@string/action_delete_all_entries"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_log_out"
+        android:title="@string/sign_out"
+        app:showAsAction="never" />
 </menu>

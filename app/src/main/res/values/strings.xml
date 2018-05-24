@@ -43,19 +43,22 @@
     <string name="hint_category">Category</string>
     <string name="placeholder_price">Price: 5 INR</string>
     <string name="placeholder_category">Category</string>
-
-    <string-array name="category_array">
-        <item>Appliances</item>
-        <item>Beauty</item>
-        <item>Books</item>
-        <item>Clothing and Accessories</item>
-        <item>Electronics</item>
-        <item>Games</item>
-        <item>Grocery</item>
-        <item>Hardware</item>
-        <item>Music and Movies</item>
-        <item>Toys</item>
-        <item>Other</item>
-    </string-array>
-
+    <string name="sign_out">Sign Out</string>
+    <string name="general">General</string>
+    <string name="about">About</string>
+    <string name="default_low_stock">5</string>
+    <string name="key_low_stock">lowStock</string>
+    <string name="default_low_stock_summary">This is the value at which you want to be notified of "low stock". The notification icon for low stock on the main screen comes from this setting. For example, if you set 10 as the Low Stock, as soon as an item goes below 10, a notification will be displayed.</string>
+    <string name="default_optimum_quantity_summary">The default quantity of items you think are optimum. This will be used when ordering items. For example, if you have 3 of an item and your optimum quantity is 10 then 7 items will be ordered automatically.</string>
+    <string name="default_optimum_quantity">10</string>
+    <string name="key_optimum_quantity">optimumQuantity</string>
+    <string name="summary_about">Inventory Now lets you manage inventories easily and quickly. It\'s a simple app to get stuff done so that you can focus on the better things.</string>
+    <string name="key_send_feedback">feedback</string>
+    <string name="summary_support">Got any queries? I\'m happy to help!</string>
+    <string name="title_send_feedback">Send Feedback</string>
+    <string name="title_about">About</string>
+    <string name="title_optimum_quantity">Optimum Quantity</string>
+    <string name="title_low_stock">Low Stock</string>
+    <string name="choose_email_client">Choose Email Client</string>
+    <string name="settings">Settings</string>
 </resources>
